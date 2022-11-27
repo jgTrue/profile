@@ -7,3 +7,10 @@ function displayMenu(id){
     (id.classList.contains('show')) ? id.classList.remove('show') : id.classList.add('show');
     
 }
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

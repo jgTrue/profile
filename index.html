@@ -26,7 +26,7 @@
             <div class="row">
               <div class="col-sm-4 offset-md-1 py-4">
                 <ul class="list-unstyled">
-                  <a href="#" class="text-dark text-decoration-none"><i class="bi bi-send mx-2"></i>Contactar</a>
+                  <a type="button" href="#" class="text-dark text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="@mdo"><i class="bi bi-send mx-2" ></i>Contactar</a>
                   <a href="#" class="text-dark text-decoration-none"><i class="bi bi-linkedin mx-2"></i>Linkedin</a>
                   <a href="mailto:jairogb2@gmail.com" class="text-dark text-decoration-none"><i class="bi bi-envelope-at mx-2"></i>Email</a>
                 </ul>
@@ -41,7 +41,7 @@
               <strong class="mx-4">Jairo Garcia Barrera</strong>
             </a>
             <div class="d-none d-lg-inline d-md-inline p-3">
-                <a href="#" class="text-dark text-decoration-none mx-2"><i class="bi bi-send mx-2"></i>Contactar</a>
+                <a type="button" href="#" class="text-dark text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="@mdo"><i class="bi bi-send mx-2" ></i>Contactar</a>
                 <a href="#" class="text-dark text-decoration-none mx-2"><i class="bi bi-linkedin mx-2"></i>Linkedin</a>
                 <a href="mailto:jairogb2@gmail.com" class="text-dark text-decoration-none mx-2"><i class="bi bi-envelope-at mx-2"></i>Email</a>
             </div>
@@ -70,7 +70,7 @@
       <hr> 
 
       <!-- Estudios -->
-      <div class="container d-flex my-2 p-2 rounded-2 border-0 bg-champagne" id="formacion">
+      <section class="container d-flex my-2 p-2 rounded-2 border-0 bg-champagne" id="formacion">
         <div class="container row text-center d-flex">
           <h2 class="pb-2 text-center">Formación</h2>
           <div class="col-lg-4 col-md-4 col-sm-12 p-2 align-self-center">
@@ -92,10 +92,10 @@
             <p>Ilerna - Sevilla - 2022</p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Experiencia -->
-      <div class="container d-flex my-4 p-4 rounded-2 border-0 bg-champagne" id="experiencia">
+      <section class="container d-flex my-4 p-4 rounded-2 border-0 bg-champagne" id="experiencia">
         <div class="row mb-2">
           <h2 class="pb-2 text-center">Experiencia</h2>
           <div class="col-md-6">
@@ -119,7 +119,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Skills -->
       <section class="container" id="skills">
@@ -187,7 +187,7 @@
       </section>
 
       <!-- Extra -->
-      <div class="container px-4 py-5 bg-champagne my-3 rounded-2">
+      <section class="container px-4 py-5 bg-champagne my-3 rounded-2">
         <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-3">
           <div class="d-flex flex-column align-items-start gap-2">
             <h3 class="fw-bold">Idiomas</h3>
@@ -247,7 +247,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
 
       <hr>
@@ -329,6 +329,46 @@
           </div>
         </div>
       </footer>
+
+    
+
+
+      <section class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-champagne">
+              <h1 class="modal-title fs-5" id="contactModalLabel">Enviar mensaje</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-mistyblue">
+              <form action="" method="post">
+                <div class="mb-3">
+                  <label for="remitente" class="col-form-label">Remitente:</label>
+                  <input type="text" class="form-control" id="remitente" name="remitente" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mail" class="col-form-label">Email:</label>
+                  <input type="email" class="form-control" id="mail" name="mail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="telf" class="col-form-label">Teléfono:</label>
+                  <input type="tel" class="form-control" id="telf" name="telf" required>
+                </div>
+                <div class="mb-3">
+                  <label for="motivo" class="col-form-label">Motivo:</label>
+                  <textarea class="form-control" id="motivo" name="motivo" required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="col-form-label">Mensaje:</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn bg-salmon">Enviar</button>
+                <button type="button" class="btn bg-taupe" data-bs-dismiss="modal">Cancelar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
 </body>
 </html>
