@@ -1,0 +1,22 @@
+body{
+    background-color: #B4AAA9;
+}
+header{
+    background-color: #FFF0DF;
+
+
+}
+
+#profileSection{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+#profileSectio:nth-child(1){
+    background-color: #FFF0DF;
+    height: 100%;
+}
+
