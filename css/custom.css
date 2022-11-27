@@ -2,9 +2,7 @@ body{
     background-color: #B4AAA9;
 }
 
-header{
-    background-color: #FFF0DF;
-}
+
 
 #profileSection{
     background-image: url("../img/background.jpg");
@@ -13,20 +11,23 @@ header{
     background-repeat: no-repeat;
 }
 
-#profileSectio:nth-child(1){
-    background-color: #FFF0DF;
-    height: 100%;
-}
-
-#formacion{
+.bg-champagne{
     background-color: #FFF0DF;
 }
 
-#experiencia{
-    background-color: #FFF0DF;
+.bg-taupe{
+    background-color: #B4AAA9;
 }
-#experiencia strong{
+.color-taupe{
     color: #B4AAA9;
+}
+
+.bg-mistyblue{
+    background-color: #F8FAFD;
+}
+
+.bg-salmon{
+    background-color: #F0C9B3;
 }
 
 
