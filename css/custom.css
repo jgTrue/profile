@@ -1,10 +1,9 @@
 body{
     background-color: #B4AAA9;
 }
+
 header{
     background-color: #FFF0DF;
-
-
 }
 
 #profileSection{
@@ -12,11 +11,14 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-   
 }
 
 #profileSectio:nth-child(1){
     background-color: #FFF0DF;
     height: 100%;
+}
+
+#formacion{
+    background-color: #FFF0DF;
 }
 
