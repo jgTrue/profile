@@ -30,3 +30,47 @@ const observer = new IntersectionObserver((entries) => {
 });
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+function overIcon(element){
+  (element.classList.contains('fs-5')) ? element.classList.remove("fs-5") : element.classList.add("fs-5");
+  
+};
+
+
+const skills = document.getElementById('skills');
+
+const progress = document.querySelectorAll('.progress-bar');
+
+function showProgress () {
+  progress.forEach(progress=>{
+    const value = progress.dataset.progress;
+    progress.style.width = `${value}%`;
+    
+  })
+}
+
+function hideProgress(){
+  progress.forEach(progress => {
+    progress.style.width = '0px';
+  });
+}
+
+window.addEventListener('scroll',() =>{
+  const sectionPos = skills.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 2;
+
+  if(sectionPos < screenPos){
+    showProgress();
+  }else{
+    hideProgress();
+  }
+
+});
+
+function redirect(element){
+  if(!confirm("Vas a salir a una página externa.")){
+    element.href = "";
+    element.target = "";
+  }
+  
+}

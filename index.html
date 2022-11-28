@@ -26,9 +26,9 @@
             <div class="row">
               <div class="col-sm-4 offset-md-1 py-4">
                 <ul class="list-unstyled">
-                  <a type="button" href="#" class="text-dark text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="@mdo"><i class="bi bi-send mx-2" ></i>Contactar</a>
-                  <a href="https://www.linkedin.com/in/jairo-garcía-barrera-8289bb222/" target="_blank" class="text-dark text-decoration-none"><i class="bi bi-linkedin mx-2"></i>Linkedin</a>
-                  <a href="mailto:jairogb2@gmail.com" class="text-dark text-decoration-none"><i class="bi bi-envelope-at mx-2"></i>Email</a>
+                  <a type="button" href="#" class="text-dark text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="@mdo" onmouseover="overIcon(this)" onmouseout="overIcon(this)"><i class="bi bi-send mx-2" ></i>Contactar</a>
+                  <a href="https://www.linkedin.com/in/jairo-garcía-barrera-8289bb222/" target="_blank" class="text-dark text-decoration-none" onmouseover="overIcon(this)" onmouseout="overIcon(this)" onclick="redirect(this)"><i class="bi bi-linkedin mx-2"></i>Linkedin</a>
+                  <a href="mailto:jairogb2@gmail.com" class="text-dark text-decoration-none" onmouseover="overIcon(this)" onmouseout="overIcon(this)"><i class="bi bi-envelope-at mx-2"></i>Email</a>
                 </ul>
               </div>
             </div>
@@ -41,9 +41,9 @@
               <strong class="mx-4">Jairo Garcia Barrera</strong>
             </a>
             <div class="d-none d-lg-inline d-md-inline p-3">
-                <a type="button" href="#" class="text-dark text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="@mdo"><i class="bi bi-send mx-2" ></i>Contactar</a>
-                <a href="https://www.linkedin.com/in/jairo-garcía-barrera-8289bb222/" target="_blank" class="text-dark text-decoration-none mx-2"><i class="bi bi-linkedin mx-2"></i>Linkedin</a>
-                <a href="mailto:jairogb2@gmail.com" class="text-dark text-decoration-none mx-2"><i class="bi bi-envelope-at mx-2"></i>Email</a>
+                <a type="button" href="#" class="text-dark text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="@mdo" onmouseover="overIcon(this)" onmouseout="overIcon(this)" ><i class="bi bi-send mx-2" ></i>Contactar</a>
+                <a href="https://www.linkedin.com/in/jairo-garcía-barrera-8289bb222/" target="_blank" class="text-dark text-decoration-none mx-2" onmouseover="overIcon(this)" onmouseout="overIcon(this)" onclick="redirect(this)"><i class="bi bi-linkedin mx-2"></i>Linkedin</a>
+                <a href="mailto:jairogb2@gmail.com" class="text-dark text-decoration-none mx-2" onmouseover="overIcon(this)" onmouseout="overIcon(this)"><i class="bi bi-envelope-at mx-2"></i>Email</a>
             </div>
             <button class="navbar-toggler collapsed text-black border-0 d-md-none d-lg-none d-xl-none" type="button"  aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" onclick="displayMenu('navbarHeader')">
                 <i class="bi bi-list"></i>
@@ -53,7 +53,7 @@
       </header>
 
       <!-- Encabezado -->
-      <main class="container my-2 shadow">
+      <main class="container my-2 border-0">
         <div class="row p-4 p-md-5 mb-4 border-0 rounded text-center my-2 fade-In" id="profileSection">
           <div class="col-lg-6 px-0 my-2 d-flex justify-content-center">
             <img src="./img/profileImg.webp" class="img-fluid border-0 rounded-2" alt="profileImg" >
@@ -95,11 +95,6 @@
           </div>
         </div>
       </div>
-
-        
-        
-        
-      
 
       <!-- Separador -->
       <hr> 
@@ -165,56 +160,56 @@
             <div class="my-2">
               <h5><i class="bi bi-filetype-php fs-4 mx-2"></i>PHP</h5>
               <div class="progress border-1 border border-dark">
-                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></span>
+                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" data-progress ="70"></span>
               </div>
             </div>
 
             <div class="my-2">
               <h5><i class="bi bi-filetype-java fs-4 mx-2"></i>JAVA</h5>
               <div class="progress border-1 border border-dark">
-                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></span>
+                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" data-progress = "80"></span>
               </div>
             </div>
 
             <div class="my-2">
               <h5><i class="bi bi-filetype-css fs-4 mx-2"></i>CSS</h5>
               <div class="progress border-1 border border-dark">
-                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></span>
+                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" data-progress ="55"></span>
               </div>
             </div>
 
             <div class="my-2">
               <h5><i class="bi bi-filetype-html fs-4 mx-2"></i>HTML</h5>
               <div class="progress border-1 border border-dark">
-                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></span>
+                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" data-progress ="90"></span>
               </div>
             </div>
 
             <div class="my-2">
               <h5><i class="bi bi-bootstrap fs-4 mx-2"></i>Bootstrap</h5>
               <div class="progress border-1 border border-dark">
-                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></span>
+                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" data-progress ="60"></span>
               </div>
             </div>
 
             <div class="my-2">
               <h5><i class="bi bi-wordpress fs-4 mx-2"></i>Wordpress</h5>
               <div class="progress border-1 border border-dark">
-                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></span>
+                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" data-progress ="25"></span>
               </div>
             </div>
 
             <div class="my-2">
               <h5><i class="bi bi-filetype-js fs-4 mx-2"></i>JavaScript</h5>
               <div class="progress border-1 border border-dark">
-                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 37%"></span>
+                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" data-progress ="37" ></span>
               </div>
             </div>
 
             <div class="my-2">
               <h5><i class="bi bi-filetype-sql fs-4 mx-2"></i>SQL</h5>
               <div class="progress border-1 border border-dark">
-                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></span>
+                <span class="progress-bar progress-bar-animated bg-dark bg-gradient" role="progressbar" data-progress ="65"></span>
               </div>
             </div>
           </div>
@@ -397,10 +392,10 @@
             
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="https://www.instagram.com/jairogarciia/" target="_blank" class="nav-link px-2 text-black"><i class="bi bi-instagram mx-2"></i>Instagram</a></li>
-              <li><a href="https://twitter.com/JairoGarciia96" target="_blank" class="nav-link px-2 text-black"><i class="bi bi-twitter mx-2"></i>Twitter</a></li>
-              <li><a href="https://www.linkedin.com/in/jairo-garcía-barrera-8289bb222/" target="_blank" class="nav-link px-2 text-black"><i class="bi bi-linkedin mx-2"></i>Linkedin</a></li>
-              <li><a href="https://www.linkedin.com/in/jairo-garcía-barrera-8289bb222/" target="_blank" class="nav-link px-2 text-black"><i class="bi bi-github mx-2"></i>GitHub</a></li>
+              <li><a href="https://www.instagram.com/jairogarciia/" target="_blank" class="nav-link px-2 text-black" onmouseover="overIcon(this)" onmouseout="overIcon(this)" onclick="redirect(this)"><i class="bi bi-instagram mx-2"></i>Instagram</a></li>
+              <li><a href="https://twitter.com/JairoGarciia96" target="_blank" class="nav-link px-2 text-black" onmouseover="overIcon(this)" onmouseout="overIcon(this)" onclick="redirect(this)"><i class="bi bi-twitter mx-2"></i>Twitter</a></li>
+              <li><a href="https://www.linkedin.com/in/jairo-garcía-barrera-8289bb222/" target="_blank" class="nav-link px-2 text-black" onmouseover="overIcon(this)" onmouseout="overIcon(this)" onclick="redirect(this)"><i class="bi bi-linkedin mx-2"></i>Linkedin</a></li>
+              <li><a href="https://github.com/jgTrue" target="_blank" class="nav-link px-2 text-black" onmouseover="overIcon(this)" onmouseout="overIcon(this)" onclick="redirect(this)"><i class="bi bi-github mx-2"></i>GitHub</a></li>
             </ul>
     
             <div class="text-end">
