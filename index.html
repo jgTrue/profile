@@ -18,7 +18,7 @@
     <title>JairoGarcia</title>
 </head>
 <body>
-
+  
     <!-- Nav -->
     <header class="bg-champagne border-2 border-bottom border-dark">
         <div class="collapse " id="navbarHeader">
@@ -54,7 +54,7 @@
 
       <!-- Encabezado -->
       <main class="container my-2 shadow">
-        <div class="row p-4 p-md-5 mb-4 border-0 rounded text-center my-2" id="profileSection">
+        <div class="row p-4 p-md-5 mb-4 border-0 rounded text-center my-2 fade-In" id="profileSection">
           <div class="col-lg-6 px-0 my-2 d-flex justify-content-center">
             <img src="./img/profileImg.webp" class="img-fluid border-0 rounded-2" alt="profileImg" >
           </div>
@@ -66,11 +66,46 @@
         </div>
       </main>
 
+      <div class="container px-4 py-5 bg-champagne rounded-2 border-0 fade-In" id="aboutMe">
+        <h2 class="pb-2 text-center">Sobre mí</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <div>
+              <p class="mb-0 fs-4 fw-semibold"><i class="bi bi-file-earmark-person mx-2"></i>Nombre completo</p>
+              <p class="text-end fs-4 fw-light">García Barrera, Jairo</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <p class="mb-0 fs-4 fw-semibold"><i class="bi bi-geo-fill mx-2"></i>Localidad</p>
+              <p class="text-center fs-4 fw-light">Sevilla</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <p class="mb-0 fs-4 fw-semibold"><i class="bi bi-calendar3 mx-2"></i>F. Nacimiento</p>
+              <p class="text-center fs-4 fw-light">20/05/1996</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <p class="mb-0 fs-4 fw-semibold"><i class="bi bi-envelope-at mx-2"></i>Dirección Email</p>
+              <p class="text-end fs-4 fw-light">jairogb2@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+        
+        
+      
+
       <!-- Separador -->
       <hr> 
 
       <!-- Estudios -->
-      <section class="container d-flex my-2 p-2 rounded-2 border-0 bg-champagne" id="formacion">
+      <section class="container d-flex my-2 p-2 rounded-2 border-0 bg-champagne hidden" id="formacion">
         <div class="container row text-center d-flex">
           <h2 class="pb-2 text-center">Formación</h2>
           <div class="col-lg-4 col-md-4 col-sm-12 p-2 align-self-center">
@@ -95,7 +130,7 @@
       </section>
 
       <!-- Experiencia -->
-      <section class="container d-flex my-4 p-4 rounded-2 border-0 bg-champagne" id="experiencia">
+      <section class="container d-flex my-4 p-4 rounded-2 border-0 bg-champagne hidden" id="experiencia">
         <div class="row mb-2">
           <h2 class="pb-2 text-center">Experiencia</h2>
           <div class="col-md-6">
@@ -122,7 +157,7 @@
       </section>
 
       <!-- Skills -->
-      <section class="container" id="skills">
+      <section class="container hidden" id="skills">
         <div class="row p-5 rounded bg-champagne">
           <h2 class="text-center">Skills</h2>
           <div class="col-lg-12 p-2" >
@@ -187,7 +222,7 @@
       </section>
 
       <!-- Extra -->
-      <section class="container px-4 py-5 bg-champagne my-3 rounded-2">
+      <section class="container px-4 py-5 bg-champagne my-3 rounded-2 hidden">
         <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-3">
           <div class="d-flex flex-column align-items-start gap-2">
             <h3 class="fw-bold">Idiomas</h3>
@@ -252,7 +287,7 @@
 
       <hr>
       <!-- Hobbies -->
-      <section class="container px-4 py-5 bg-champagne border-0 rounded-2 my-3" id="hanging-icons">
+      <section class="container px-4 py-5 bg-champagne border-0 rounded-2 my-3 hidden" id="hanging-icons">
         <h2 class="pb-2 border-bottom">Hobbies</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center">
 
@@ -374,6 +409,6 @@
           </div>
         </div>
       </footer>
-
+ 
 </body>
 </html>
