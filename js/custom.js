@@ -10,9 +10,6 @@ function displayMenu(id){
 
 const exampleModal = document.getElementById('contactModal')
 exampleModal.addEventListener('show.bs.modal', event => {
-  const button = event.relatedTarget
-  const recipient = button.getAttribute('data-bs-whatever')
-  const modalTitle = exampleModal.querySelector('.modal-title')
   const modalBodyInput = exampleModal.querySelector('.modal-body input')
   modalBodyInput.value = recipient
 })
@@ -73,4 +70,59 @@ function redirect(element){
     element.target = "";
   }
   
+}
+
+
+function validateForm(){
+
+  const form = document.getElementById('formContact');
+  const remitente = document.getElementById("remitente");
+ 
+  const mail = document.getElementById("mail");
+  const telf = document.getElementById("telf");
+  const motivo = document.getElementById("motivo");
+  const mensaje = document.getElementById("mensaje");
+  
+  let remitenteVal = remitente.value;
+  let mailVal = mail.value;
+  let telfVal = telf.value;
+  let motivoVal = motivo.value;
+  let mensajeVal = mensaje.value;
+
+  const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{3})$/;
+  let valid = true;
+
+  if(remitenteVal = '' || remitenteVal.lenght > 20){
+    alert("El nombre del remitente no es válido.");
+    valid = false;
+  }
+  if(!res.test(String(mailVal).toLowerCase())){
+    alert("El email no es válido.");
+    valid = false;
+  }
+  if(!re.test(telfVal)){
+    alert("El teléfono introducido no es válido.");
+    valid = false;
+  }
+  if(motivoVal.length > 40){
+    alert("El mensaje de motivo es demasiado extenso.");
+    valid = false;
+  }
+  if(mensajeVal.lenght > 140){
+    alert("El mensaje es demasiado extenso.")
+    valid = false;
+  }
+
+  if(valid){
+    return true;
+  }else{
+    return false;
+  }
+  
+}
+
+window.onload = function() {
+  let form = document.getElementById('formContact');
+  form.onsubmit = validateForm;
 }
